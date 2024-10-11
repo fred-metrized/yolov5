@@ -48,7 +48,7 @@ This yolov5 package contains everything from ultralytics/yolov5 <a href="https:/
 Install yolov5 using pip (for Python >=3.7)
 
 ```console
-pip install yolov5
+pip install git+https://github.com/fred-metrized/yolov5
 ```
 
 ## <div align="center">Model Zoo</div>
