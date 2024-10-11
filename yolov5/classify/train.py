@@ -187,7 +187,7 @@ def train(opt, device):
             images, labels = images.to(device, non_blocking=True), labels.to(device)
 
             # Forward
-            with amp.autocast(enabled=cuda):  # stability issues when enabled
+            with amp.autocast('cuda', dtype=torch.bfloat16, enabled=True):  # stability issues when enabled
                 loss = criterion(model(images), labels)
 
             # Backward
