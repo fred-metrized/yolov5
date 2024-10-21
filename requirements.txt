@@ -57,3 +57,5 @@ boto3>=1.19.1
 sahi>=0.11.10
 # roboflow
 roboflow>=0.2.29
+# huggingface_hub
+huggingface_hub
